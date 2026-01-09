@@ -30,8 +30,10 @@ CLASSES_FILE_ID = "PASTE_CLASSES_FILE_ID_HERE"
 # DOWNLOAD FROM GOOGLE DRIVE
 # ---------------------------------
 def download_from_gdrive(file_id, output):
-    url = f"https://drive.google.com/uc?id={file_id}"
-    gdown.download(url, output, quiet=False)
+    # Streamlit Cloud friendly Google Drive download
+    url = f"https://drive.google.com/uc?export=download&id={file_id}"
+    gdown.download(url, output, quiet=False, fuzzy=True)
+
 
 if not os.path.exists(MODEL_PATH):
     st.info("Downloading trained model (first run only)…")
