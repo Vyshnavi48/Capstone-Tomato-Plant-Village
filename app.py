@@ -59,5 +59,8 @@ def download_from_drive(file_id, output_path):
             if chunk:
                 f.write(chunk)
 
+MODEL_FILE_ID = "1s3VFqAusNEwMUUg51samL_olHg_-XgC2"
 CLASSES_FILE_ID = "1T4ypwiViYf5Mo7GNTeT9BWxE71J9Kcq9"
+
+
 
