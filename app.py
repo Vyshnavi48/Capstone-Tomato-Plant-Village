@@ -107,3 +107,5 @@ if uploaded_file is not None:
     st.subheader("Class Probabilities")
     for i, class_name in enumerate(class_names):
         st.write(f"{class_name}: {probabilities[i].item():.2%}")
+    MODEL_FILE_ID =1s3VFqAusNEwMUUg51samL_olHg_-XgC2
+    CLASSES_FILE_ID = 1T4ypwiViYf5Mo7GNTeT9BWxE71J9Kcq9
